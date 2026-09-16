@@ -35,6 +35,14 @@ const localOwner = {
   image_public_id: null,
 };
 
+export interface OwnerProfile {
+  id: number;
+  name: string;
+  biography: string;
+  image_url: string | null;
+  image_public_id: string | null;
+}
+
 async function withSignedImage<T extends { image_url?: string | null; image_public_id?: string | null }>(item: T) {
   return { ...item, image_url: await signedImageUrl(item.image_public_id || item.image_url || null, item.image_url) };
 }
@@ -54,7 +62,7 @@ export async function getPublishedGallery(limit?: number) {
   return Promise.all((data || []).map(withSignedImage));
 }
 
-export async function getOwnerProfile() {
+export async function getOwnerProfile(): Promise<OwnerProfile | null> {
   if (!isSupabaseConfigured) return localOwner;
   const { data, error } = await supabase
     .from('owner_profile')
@@ -63,7 +71,7 @@ export async function getOwnerProfile() {
     .maybeSingle();
   if (error) throw error;
   if (!data) return null;
-  return withSignedImage(data);
+  return withSignedImage<OwnerProfile>(data);
 }
 
 export async function getGalleryForAdmin() {
