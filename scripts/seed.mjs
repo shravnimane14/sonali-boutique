@@ -23,7 +23,7 @@ if (!owner) {
   const { error } = await supabase.from('owner_profile').insert({
     id: 1,
     name: '',
-    biography: 'At Sonali Boutique, every saree is chosen with an eye for elegance, beauty and individuality. The boutique is built around a simple belief — every customer deserves to find something that feels truly special.'
+    biography: 'At Sonali Butik, every saree is chosen with an eye for elegance, beauty and individuality. The boutique is built around a simple belief — every customer deserves to find something that feels truly special.'
   });
   if (error) throw error;
 }
@@ -49,7 +49,7 @@ if ((count || 0) === 0) {
     const { error: insertError } = await supabase.from('gallery_items').insert({
       name: `Saree ${String(i + 1).padStart(2, '0')}`,
       category: 'Sarees',
-      description: 'Contact Sonali Boutique for fabric, price and availability details.',
+      description: 'Contact Sonali Butik for fabric, price and availability details.',
       image_url: storagePath,
       image_public_id: storagePath,
       sort_order: i,

@@ -22,17 +22,17 @@ async function LegacyHome() {
 		<ScrollReveal />
 		<section className="editorial-hero">
 			<div className="editorial-hero-copy reveal">
-				<div className="eyebrow editorial-eyebrow">Sonali Boutique · Dhubulia</div>
+				<div className="eyebrow editorial-eyebrow">Sonali Butik · Dhubulia</div>
 				<h1>Find your<br /><em>perfect drape.</em></h1>
 				<p>Thoughtfully chosen sarees for the moments you want to remember.</p>
 				<div className="hero-actions">
 					<Link className="editorial-button editorial-button-light" href="/collection">Explore collection</Link>
-					<a className="editorial-text-link" href="https://wa.me/918900622771" target="_blank" rel="noreferrer">Enquire on WhatsApp <span>↗</span></a>
+					<a className="editorial-text-link" href="https://wa.me/916297737301" target="_blank" rel="noreferrer">Enquire on WhatsApp <span>↗</span></a>
 				</div>
 				<div className="editorial-location"><span>●</span> Dhubulia, West Bengal</div>
 			</div>
 			<div className="editorial-hero-art">
-				<img src={hero} alt="Saree 01 from Sonali Boutique" />
+				<img src={hero} alt="Saree 01 from Sonali Butik" />
 				<div className="editorial-location-card"><span>●</span><strong>Dhubulia</strong><small>West Bengal, India</small><i>FFV2+QX6</i></div>
 				<div className="editorial-art-label">Saree 01<br /><small>Featured drape · 01</small></div>
 			</div>
@@ -54,7 +54,7 @@ async function LegacyHome() {
 		</section>
 
 		<section className="editorial-owner scroll-target">
-			<div className="editorial-owner-image">{owner?.image_url && <img src={owner.image_url} alt="Portrait of Sonali Boutique owner" />}</div>
+			<div className="editorial-owner-image">{owner?.image_url && <img src={owner.image_url} alt="Portrait of Sonali Butik owner" />}</div>
 			<div><div className="eyebrow">04 / The woman behind the boutique</div><h2>Made personal,<br /><em>by Sonali.</em></h2><p>{owner?.biography || 'Every saree is chosen with an eye for elegance, beauty and individuality.'}</p><Link className="editorial-text-link editorial-dark-link" href="/about">Discover our story <span>↗</span></Link></div>
 		</section>
 	</main>;
