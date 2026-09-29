@@ -35,7 +35,7 @@ export default function AdminLoginPage() {
   return (
     <main className="auth-page">
       <section className="auth-card" aria-labelledby="admin-login-title">
-        <div className="eyebrow">Sonali Boutique</div>
+        <div className="eyebrow">Sonali Butik</div>
         <h1 id="admin-login-title">Admin login</h1>
         <p className="section-copy">Sign in to manage the boutique collection and owner profile.</p>
         <form onSubmit={handleSubmit}>

@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     if (!(file instanceof File)) throw new Error('Image is required.');
     const name = String(form.get('name') || 'Untitled Saree').trim().slice(0, 190);
     const category = String(form.get('category') || 'Sarees').trim().slice(0, 120);
-    const description = String(form.get('description') || 'Contact Sonali Boutique for fabric, price and availability details.').trim();
+    const description = String(form.get('description') || 'Contact Sonali Butik for fabric, price and availability details.').trim();
     const isNew = String(form.get('is_new_arrival') || 'false') === 'true';
     const published = String(form.get('published') || 'true') === 'true';
 

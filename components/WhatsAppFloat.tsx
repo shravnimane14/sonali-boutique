@@ -1,1 +1,1 @@
-export default function WhatsAppFloat(){return <a className="float-wa" href="https://wa.me/918900622771?text=Hello%20Sonali%20Boutique%2C%20I%20would%20like%20to%20know%20more%20about%20your%20saree%20collection." target="_blank" rel="noreferrer">WhatsApp</a>}
+export default function WhatsAppFloat(){return <a className="float-wa" href="https://wa.me/916297737301?text=Hello%20Sonali%20Butik%2C%20I%20would%20like%20to%20know%20more%20about%20your%20saree%20collection." target="_blank" rel="noreferrer">WhatsApp</a>}

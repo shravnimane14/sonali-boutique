@@ -19,7 +19,7 @@ const localGallery = localGalleryFiles.map((file, index) => ({
   id: index + 1,
   name: localGalleryNames[index],
   category: 'Sarees',
-  description: 'Contact Sonali Boutique for fabric, price and availability details.',
+  description: 'Contact Sonali Butik for fabric, price and availability details.',
   image_url: `/gallery/${encodeURIComponent(file)}`,
   image_public_id: null,
   sort_order: index,
@@ -29,8 +29,8 @@ const localGallery = localGalleryFiles.map((file, index) => ({
 
 const localOwner = {
   id: 1,
-  name: 'Sonali Boutique',
-  biography: 'At Sonali Boutique, every saree is chosen with an eye for elegance, beauty and individuality. The boutique is built around a simple belief — every customer deserves to find something that feels truly special.',
+  name: 'Sonali Butik',
+  biography: 'At Sonali Butik, every saree is chosen with an eye for elegance, beauty and individuality. The boutique is built around a simple belief — every customer deserves to find something that feels truly special.',
   image_url: '/owner/owner.jpeg',
   image_public_id: null,
 };
